@@ -1,5 +1,7 @@
+
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
+
 # Call the method directors_database to retrieve the NDS
 
 def pretty_print_nds(nds)
@@ -10,11 +12,18 @@ end
 
 
 def print_first_directors_movie_titles
-  movies = directors_database[0][:movies]
-  index = 0
-  while index < movies.length do
-    puts movies[index][:title]
-    index += 1 
-  end 
+index = 0 
+
+
+  while index < directors_database[0][:movies].count do 
+   
+    puts directors_database[0][:movies][index][:title]
+    index +=1
   
 end
+
+
+
+end
+
+
