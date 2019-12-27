@@ -1,3 +1,4 @@
+
 require 'spec_helper'
 
 describe 'When using "pp" to display complex data structures,' do
