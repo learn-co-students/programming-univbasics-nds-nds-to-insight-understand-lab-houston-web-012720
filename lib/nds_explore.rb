@@ -14,5 +14,3 @@ def print_first_directors_movie_titles
     movie_index += 1
   end
 end
-
-pp directors_database
